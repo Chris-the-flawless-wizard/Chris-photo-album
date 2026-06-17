@@ -10,13 +10,11 @@ body {
 
 .calculator {
     width: 350px;
-    background: rgba(255, 255, 255, 0.12);
-    backdrop-filter: blur(20px);
+    background: linear-gradient(145deg, #1c1c1c, #000000);
     border-radius: 35px;
     padding: 20px;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.6);
 }
-
 
 .display {
     color: white;
