@@ -1,25 +1,31 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-image: url("images/image.png");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background: black;
     color: white;
+    font-family: Arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-header {
-    text-align: center;
-    color: white;
-    padding: 40px;
-    background: rgba(0,0,0,0.5);
+
+.calculator {
+    background: #222;
+    padding: 20px;
+    border-radius: 15px;
 }
 
-h1 {
-    color: white;
+
+button {
+    width: 60px;
+    height: 50px;
+    margin: 5px;
+    font-size: 20px;
 }
 
-p {
-    color: white;
+
+input {
+    width: 250px;
+    height: 50px;
+    font-size: 25px;
 }
