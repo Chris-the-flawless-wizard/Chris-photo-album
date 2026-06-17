@@ -1,23 +1,106 @@
 body {
     height: 100vh;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    background: linear-gradient(
-        -45deg,
-        #ff6b6b,
-        #6c63ff,
-        #00c9ff,
-        #92fe9d
-    );
-
-    background-size: 400% 400%;
-    animation: gradientBG 12s ease infinite;
+    background: linear-gradient(135deg, #667eea, #764ba2, #ff758c);
+    font-family: Arial, sans-serif;
 }
 
-@keyframes gradientBG {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+/* Calculator Box */
+.calculator {
+    width: 350px;
+    padding: 25px;
+    border-radius: 35px;
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+
+    box-shadow:
+        0 20px 40px rgba(0,0,0,0.4),
+        inset 0 0 20px rgba(255,255,255,0.2);
+
+    border: 1px solid rgba(255,255,255,0.3);
+
+    transform: perspective(800px) rotateX(5deg);
+}
+
+
+/* Display Screen */
+#display {
+    width: 100%;
+    height: 80px;
+    border: none;
+    outline: none;
+
+    border-radius: 20px;
+    margin-bottom: 20px;
+
+    font-size: 35px;
+    text-align: right;
+    padding: 15px;
+
+    background: rgba(0,0,0,0.6);
+    color: white;
+
+    box-shadow: inset 0 5px 15px rgba(0,0,0,0.5);
+}
+
+
+/* Buttons Area */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+
+/* Calculator Buttons */
+button {
+    height: 65px;
+    border-radius: 20px;
+    border: none;
+
+    font-size: 22px;
+    cursor: pointer;
+
+    background: rgba(255,255,255,0.2);
+    color: white;
+
+    box-shadow:
+        0 8px 15px rgba(0,0,0,0.3);
+
+    transition: 0.3s;
+}
+
+
+/* Button Animation */
+button:hover {
+    transform: translateY(-5px);
+    background: rgba(255,255,255,0.4);
+}
+
+
+button:active {
+    transform: scale(0.9);
+}
+
+
+/* Operator Buttons */
+.operator {
+    background: #ff9500;
+}
+
+
+/* Equal Button */
+.equal {
+    background: #34c759;
+    grid-column: span 2;
+}
+
+
+/* Clear Button */
+.clear {
+    background: #ff3b30;
 }
