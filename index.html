@@ -1,20 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chris Photo Album</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <h1>Chris the Flawless Wizard - Photo Album</h1>
+<div class="calculator">
+    <input type="text" id="display">
 
-    <div class="gallery">
-        <img src="ccc.jpg" alt="Photo 1">
-        <img src="das.jpg" alt="Photo 2">
-        <img src="sssd.jpg" alt="Photo 3">
-    </div>
+    <button onclick="clearDisplay()">C</button>
+    <button onclick="addValue('/')">/</button>
+    <button onclick="addValue('*')">*</button>
+    <button onclick="addValue('-')">-</button>
+
+    <button onclick="addValue('7')">7</button>
+    <button onclick="addValue('8')">8</button>
+    <button onclick="addValue('9')">9</button>
+    <button onclick="addValue('+')">+</button>
+
+    <button onclick="addValue('4')">4</button>
+    <button onclick="addValue('5')">5</button>
+    <button onclick="addValue('6')">6</button>
+
+    <button onclick="addValue('1')">1</button>
+    <button onclick="addValue('2')">2</button>
+    <button onclick="addValue('3')">3</button>
+
+    <button onclick="addValue('0')">0</button>
+    <button onclick="calculate()">=</button>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
