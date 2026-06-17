@@ -1,35 +1,55 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html>
 <head>
-    <title>Calculator</title>
+    <title>Scientific Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <div class="calculator">
-    <input type="text" id="display">
 
-    <button onclick="clearDisplay()">C</button>
-    <button onclick="addValue('/')">/</button>
-    <button onclick="addValue('*')">*</button>
-    <button onclick="addValue('-')">-</button>
+    <div class="display" id="display">0</div>
 
-    <button onclick="addValue('7')">7</button>
-    <button onclick="addValue('8')">8</button>
-    <button onclick="addValue('9')">9</button>
-    <button onclick="addValue('+')">+</button>
+    <div class="buttons">
 
-    <button onclick="addValue('4')">4</button>
-    <button onclick="addValue('5')">5</button>
-    <button onclick="addValue('6')">6</button>
+        <button class="gray">2nd</button>
+        <button class="gray">π</button>
+        <button class="gray">e</button>
+        <button class="gray">mc</button>
+        <button class="gray">m+</button>
+        <button class="gray">m-</button>
 
-    <button onclick="addValue('1')">1</button>
-    <button onclick="addValue('2')">2</button>
-    <button onclick="addValue('3')">3</button>
+        <button class="gray">sin</button>
+        <button class="gray">cos</button>
+        <button class="gray">tan</button>
+        <button class="gray">ln</button>
+        <button class="gray">log</button>
+        <button class="gray">√</button>
 
-    <button onclick="addValue('0')">0</button>
-    <button onclick="calculate()">=</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button class="orange">÷</button>
+
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button class="orange">×</button>
+
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button class="orange">−</button>
+
+        <button>0</button>
+        <button>.</button>
+        <button>C</button>
+        <button class="orange">+</button>
+
+        <button class="zero">=</button>
+
+    </div>
 
 </div>
 
