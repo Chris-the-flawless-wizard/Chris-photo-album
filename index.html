@@ -1,59 +1,30 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Chris' Calculator</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
 <div class="calculator">
 
-    <div class="display" id="display">0</div>
+    <input type="text" id="display" readonly>
 
     <div class="buttons">
 
-        <button class="gray">2nd</button>
-        <button class="gray">π</button>
-        <button class="gray">e</button>
-        <button class="gray">mc</button>
-        <button class="gray">m+</button>
-        <button class="gray">m-</button>
+        <button class="clear" onclick="clearDisplay()">C</button>
+        <button class="operator" onclick="addValue('/')">÷</button>
+        <button class="operator" onclick="addValue('*')">×</button>
+        <button class="operator" onclick="addValue('-')">−</button>
 
-        <button class="gray">sin</button>
-        <button class="gray">cos</button>
-        <button class="gray">tan</button>
-        <button class="gray">ln</button>
-        <button class="gray">log</button>
-        <button class="gray">√</button>
+        <button onclick="addValue('7')">7</button>
+        <button onclick="addValue('8')">8</button>
+        <button onclick="addValue('9')">9</button>
+        <button class="operator" onclick="addValue('+')">+</button>
 
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button class="orange">÷</button>
+        <button onclick="addValue('4')">4</button>
+        <button onclick="addValue('5')">5</button>
+        <button onclick="addValue('6')">6</button>
+        <button onclick="addValue('1')">1</button>
 
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button class="orange">×</button>
+        <button onclick="addValue('2')">2</button>
+        <button onclick="addValue('3')">3</button>
+        <button onclick="addValue('0')">0</button>
 
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button class="orange">−</button>
-
-        <button>0</button>
-        <button>.</button>
-        <button>C</button>
-        <button class="orange">+</button>
-
-        <button class="zero">=</button>
+        <button class="equal" onclick="calculate()">=</button>
 
     </div>
 
 </div>
-
-<script src="script.js"></script>
-
-</body>
-</html>
